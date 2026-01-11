@@ -1,16 +1,34 @@
-# React + Vite
+# 📅 Booking Pro - Sistema SaaS de Reservas y Agenda
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Booking Pro** es una plataforma SaaS completa diseñada para profesionales (doctores, barberos, consultores) que necesitan gestionar su agenda y permitir que sus clientes reserven citas en línea automáticamente, sin cruces de horarios y respetando sus reglas de negocio.
 
-Currently, two official plugins are available:
+## 🚀 Características Principales
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### 🔐 Panel Administrativo (Back-Office)
+* **Gestión de Servicios:** Creación, edición y eliminación de servicios con precio y duración variable.
+* **Calendario Visual:** Vista mensual interactiva con resumen diario de actividades.
+* **Gestión de Citas:** Agendamiento manual, visualización de detalles y cancelación.
+* **Configuración de Horarios:** Control total de disponibilidad (Días de apertura/cierre y rango de horas específico por día).
+* **Dashboard Inteligente:** Indicadores de estado (Abierto/Cerrado) en tiempo real según la hora actual.
 
-## React Compiler
+### 🌍 Portal Público de Reservas (Front-Office)
+* **Link Personalizado:** URL única para cada profesional (`/book/:id`).
+* **Motor de Disponibilidad:** Cálculo matemático en tiempo real de huecos libres ("Slots") basado en la duración del servicio.
+* **Prevención de Conflictos:** Algoritmo que impide "Double Booking" (empalmes de citas).
+* **Soporte de Zonas Horarias:** Manejo correcto de fechas (UTC vs Local) para evitar errores de desfase de días.
+* **Privacidad:** Los clientes ven huecos libres pero no los datos de otros pacientes.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Stack Tecnológico
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* **Frontend:** React.js + Vite
+* **Estilos:** Tailwind CSS
+* **Base de Datos & Auth:** Supabase (PostgreSQL)
+* **Manejo de Fechas:** date-fns
+* **Iconos:** react-icons
+* **Routing:** React Router DOM
+
+---
+
+Desarrollado por Luis Gabriel - Ingeniero en Sistemas
