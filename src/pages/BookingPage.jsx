@@ -2,8 +2,7 @@ import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { supabase } from '../supabaseClient';
 import { FaClock, FaMoneyBillWave, FaCut, FaChevronLeft, FaCalendarDay, FaStoreSlash } from 'react-icons/fa';
-import { format, addMinutes, parseISO, setMinutes, setHours, getDay } from 'date-fns';
-import { es } from 'date-fns/locale';
+import { format, addMinutes, parseISO, getDay } from 'date-fns';
 
 const BookingPage = () => {
   const { userId } = useParams();
